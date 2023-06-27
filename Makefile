@@ -4,7 +4,7 @@ GAIA_VERSION := v9.0.0
 AKASH_VERSION := v0.16.3
 OSMOSIS_VERSION := v8.0.0
 WASMD_VERSION := v0.25.0
-LBM_SDK_VERSION := v3.3.3
+LBM_SDK_VERSION := v1.0.0
 
 GOPATH := $(shell go env GOPATH)
 GOBIN := $(GOPATH)/bin
@@ -113,7 +113,7 @@ build-gaia:
 
 get-lbmsim:
 	@mkdir -p ./chain-code/
-	@git clone --branch $(LBM_SDK_VERSION) --depth=1 https://github.com/Finschia/ibc-go.git ./chain-code/lbm-sdk
+	@git clone --branch $(LBM_SDK_VERSION) --depth=1 https://github.com/Finschia/finschia.git ./chain-code/lbm-sdk
 
 build-lbmsim:
 	@./examples/demo/scripts/build-lbmsim

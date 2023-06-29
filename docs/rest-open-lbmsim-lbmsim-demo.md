@@ -20,13 +20,13 @@ $ make get-lbmsim build-lbmsim
 # lbmsim-lbmsim creates two lbm sim chains with data directories in this repo
 # it also builds and configures the relayer for operations with those chains
 # NOTE: If you want to stop the two lbm sim chains running in the background use `killall simd`
-$ ./examples/demo/scripts/rest-open-lbmsimd-setting.sh
+$ ./examples/demo/scripts/rest-open-lbmsim-setting.sh
 
 # NOTE: enable rest api and enabled-unsafe-cors in app.toml of each lbmsim
 # app.toml is located in data/lbmsim-0/config/app.toml and data/lbmsim-1/config/app.toml
 
 # start each lbmsim
-$ ./examples/demo/scripts/rest-open-lbmsimd-start.sh
+$ ./examples/demo/scripts/rest-open-lbmsim-start.sh
 
 # At this point the relayer --home directory is ready for normal operations between
 # lbmsim-0 and lbmsim-1. Looking at the folder structure of the relayer at this point is helpful
